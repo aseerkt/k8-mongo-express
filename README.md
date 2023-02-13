@@ -54,11 +54,11 @@ minikube service express-app-service
 - All in one go
 
 ```bash
-./scripts/setup-local.sh
+source ./scripts/setup-local.sh
 ```
 
 - Destory the running services/deployments
 
 ```bash
-./scripts/stop-local.sh
+source ./scripts/stop-local.sh
 ```
