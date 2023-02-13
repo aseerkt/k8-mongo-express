@@ -57,8 +57,20 @@ minikube service express-app-service
 source ./scripts/setup-local.sh
 ```
 
+or
+
+```bash
+pnpm start:k8
+```
+
 - Destory the running services/deployments
 
 ```bash
 source ./scripts/stop-local.sh
+```
+
+or
+
+```bash
+pnpm stop:k8
 ```
