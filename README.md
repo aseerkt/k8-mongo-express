@@ -14,10 +14,10 @@
 minikube start
 ```
 
-- Set minikube docker env
+- Setup minikube docker environment
 
 ```bash
- eval $(minikube docker-env)
+eval $(minikube -p minikube docker-env)
 ```
 
 - Create docker image
@@ -55,4 +55,10 @@ minikube service express-app-service
 
 ```bash
 ./scripts/setup-local.sh
+```
+
+- Destory the running services/deployments
+
+```bash
+./scripts/stop-local.sh
 ```
