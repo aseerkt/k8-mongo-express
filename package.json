@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start:k8": "source ./scripts/setup-local.sh",
+    "stop:k8": "source ./scripts/stop-local.sh"
   },
   "keywords": [],
   "author": "Aseer",
