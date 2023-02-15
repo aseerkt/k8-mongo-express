@@ -16,7 +16,7 @@
 - Run
 
 ```bash
-source ./scripts/setup-local.sh
+source ./scripts/k8-start.sh
 # OR
 pnpm start:k8
 ```
@@ -24,15 +24,17 @@ pnpm start:k8
 - Destory the running services/deployments
 
 ```bash
-source ./scripts/stop-local.sh
+source ./scripts/k8-stop.sh
 # OR
 pnpm stop:k8
 ```
 
 ### Run Helm Kubernetes
 
+- Run
+
 ```bash
-source ./scripts/start-helm.sh
+source ./scripts/helm-start.sh
 # OR
 pnpm start:helm
 
@@ -41,7 +43,7 @@ pnpm start:helm
 - Destory the running helm chart
 
 ```bash
-source ./scripts/stop-helm.sh
+source ./scripts/helm-stop.sh
 # OR
 pnpm stop:helm
 ```

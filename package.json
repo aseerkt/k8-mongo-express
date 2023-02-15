@@ -7,10 +7,10 @@
     "preinstall": "npx only-allow pnpm",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "start:k8": "source ./scripts/setup-local.sh",
-    "stop:k8": "source ./scripts/stop-local.sh",
-    "start:helm": "./scripts/start-helm.sh",
-    "stop:helm": "./scripts/stop-helm.sh"
+    "start:k8": "source ./scripts/k8-start.sh",
+    "stop:k8": "source ./scripts/k8-stop.sh",
+    "start:helm": "./scripts/helm-start.sh",
+    "stop:helm": "./scripts/helm-stop.sh"
   },
   "keywords": [],
   "author": "Aseer",
