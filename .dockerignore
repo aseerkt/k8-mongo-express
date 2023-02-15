@@ -1,5 +1,12 @@
 .env
+
 node_modules/
+
 .prettierrc
 .gitignore
+
 README.md
+
+helm/
+k8/
+scripts/
