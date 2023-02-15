@@ -11,15 +11,13 @@
 
 ## Getting started
 
-- Run Kubernetes Express MongoDB application
+### Run Kubernets
+
+- Run
 
 ```bash
 source ./scripts/setup-local.sh
-```
-
-or
-
-```bash
+# OR
 pnpm start:k8
 ```
 
@@ -27,10 +25,23 @@ pnpm start:k8
 
 ```bash
 source ./scripts/stop-local.sh
+# OR
+pnpm stop:k8
 ```
 
-or
+### Run Helm Kubernetes
 
 ```bash
-pnpm stop:k8
+source ./scripts/start-helm.sh
+# OR
+pnpm start:helm
+
+```
+
+- Destory the running helm chart
+
+```bash
+source ./scripts/stop-helm.sh
+# OR
+pnpm stop:helm
 ```

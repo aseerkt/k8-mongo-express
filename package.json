@@ -8,7 +8,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "start:k8": "source ./scripts/setup-local.sh",
-    "stop:k8": "source ./scripts/stop-local.sh"
+    "stop:k8": "source ./scripts/stop-local.sh",
+    "start:helm": "./scripts/start-helm.sh",
+    "stop:helm": "./scripts/stop-helm.sh"
   },
   "keywords": [],
   "author": "Aseer",
