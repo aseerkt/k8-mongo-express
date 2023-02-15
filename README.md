@@ -7,6 +7,7 @@
 - minikube
 - Node.js
 - pnpm
+- helm
 
 ## Getting started
 
