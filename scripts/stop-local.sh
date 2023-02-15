@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Delete deployments
-kubectl delete deployment express-app-deployment
-kubectl delete deployment mongodb-deployment
+kubectl delete -f k8/express-app.yarml
+kubectl delete -f k8/mongo.yaml
 
 # Delete secret and config map
-kubectl delete secret mongodb-secret
-kubectl delete configmap mongodb-configmap
+kubectl delete -f k8/mongo.secret.yarml
+kubectl delete -f k8/mongo.configmap.yaml
 
 # Remove docker image
 docker rmi aseerkt/k8-express

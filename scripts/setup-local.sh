@@ -1,5 +1,12 @@
 #!/bin/sh
 
+MINIKUBE_UP=$(minikube status | grep -w "host: Running")
+
+if [ ! "$MINIKUBE_UP"  ]
+then
+    minikube start --memory=6500 --cpus=3
+fi
+
 minikube start
 
 eval $(minikube -p minikube docker-env)
