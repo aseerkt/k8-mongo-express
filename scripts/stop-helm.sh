@@ -1,13 +1,9 @@
-helm uninstall mongo-express
+RELEASE=mongo-express
+
+helm uninstall $RELEASE
 
 # Remove docker image
-docker rmi aseerkt/k8-express
-
-# Remove dangling docker images
-docker rmi $(docker images -f dangling=true -q)
-
-# Unset minikube docker environment
-eval $(minikube -p minikube docker-env --unset)
+minikube image rm aseerkt/k8-express
 
 # Stop minikube
 minikube stop
