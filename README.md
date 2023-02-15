@@ -34,7 +34,7 @@ pnpm stop:k8
 - Run
 
 ```bash
-source ./scripts/helm-start.sh
+./scripts/helm-start.sh
 # OR
 pnpm start:helm
 
@@ -43,7 +43,7 @@ pnpm start:helm
 - Destory the running helm chart
 
 ```bash
-source ./scripts/helm-stop.sh
+./scripts/helm-stop.sh
 # OR
 pnpm stop:helm
 ```
